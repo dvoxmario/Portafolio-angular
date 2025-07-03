@@ -1,0 +1,17 @@
+.home {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home__intro {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
