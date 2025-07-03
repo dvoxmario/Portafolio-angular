@@ -1,0 +1,23 @@
+<section class = "contact">
+    <h1>Contacto</h1>
+
+    <form (ngSubmit)="onSubmit()">
+        <label>
+            Nombre:
+            <input type="text" [(ngModel)]="name" name="name" required>
+        </label>
+
+
+        <label>
+            Correo electronico:
+            <input type=" email" [(ngModel)]="email" name="email" required>
+        </label>
+
+        <label>
+            Mensaje:
+            <textarea [(ngModel)]="message" name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
