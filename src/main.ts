@@ -1,6 +1,13 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
-import { App } from './app/app';
+import { AppComponent } from './app/app';
 
-bootstrapApplication(App, appConfig)
+// 👇 Importar AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// 👇 Inicializar AOS
+AOS.init();
+
+bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));

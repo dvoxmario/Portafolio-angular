@@ -1,0 +1,30 @@
+<section class="services">
+  <div class="container">
+    <h1>Servicios</h1>
+
+    <div class="service-grid">
+      <div class="card-3d-wrapper" *ngFor="let service of services">
+        <div class="card-3d">
+          <div class="card-front">
+            <div class="service-card content">
+              <div class="icon-wrapper">
+                <i class="fas" [ngClass]="service.icon"></i>
+              </div>
+              <h2>{{ service.title }}</h2>
+              <ul>
+                <li *ngFor="let item of service.items">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="service-card content">
+              <h2>{{ service.title }}</h2>
+              <p>¿Quieres saber más?</p>
+              <button class="back-btn" [routerLink]="['/contact']">Contáctame</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

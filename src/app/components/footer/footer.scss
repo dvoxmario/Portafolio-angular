@@ -1,22 +1,39 @@
 .footer {
-  background-color: #222;
-  color: #eee;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 4rem;
+  background-color: var(--bg-color);        // Fondo oscuro o claro, según el tema
+  color: var(--text-color);                // Texto adaptado al tema
+  padding: 2rem 1rem;                      // Espacio interno arriba y abajo
+  text-align: center;                      // Centra el contenido horizontalmente
+  font-size: 0.95rem;                      // Tamaño de fuente un poco más pequeño
+  border-top: 1px solid rgba(255, 255, 255, 0.1); // Línea sutil de separación
+  transition: background-color 0.3s, color 0.3s; // Transición suave al cambiar tema
+
+  p {
+    margin-bottom: 0.75rem;
+    opacity: 0.85;                        // Texto un poco atenuado
+  }
 
   .social-links {
-    margin-top: 0.5rem;
+    display: flex;                        // Alinea los enlaces en fila
+    justify-content: center;             // Centra horizontalmente
+    gap: 1.5rem;                          // Separación entre enlaces
+    flex-wrap: wrap;                     // Si no caben, se van a la siguiente línea
 
     a {
-      margin: 0 0.5rem;
-      color: #4fc3f7;
-      text-decoration: none;
+      color: var(--accent-color);        // Color resaltado (azul, celeste...)
+      font-weight: 500;                  // Texto un poco más grueso
+      text-decoration: none;             // Quita el subrayado
+      transition: color 0.3s;            // Transición suave al pasar el mouse
 
       &:hover {
-        text-decoration: underline;
-        color: #03a9f4;
+       opacity: 0.8;
       }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .social-links {
+      flex-direction: column;           // En móviles, los enlaces se ponen uno debajo del otro
+      gap: 0.75rem;
     }
   }
 }
