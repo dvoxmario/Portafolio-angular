@@ -15,5 +15,16 @@ export class ProjectCard {
     technologies: string[];
     github?: string;
     demo?: string;
+    demoImages?: string[];
   };
+
+  showModal = false;
+
+  openModal(): void {
+    this.showModal = true;
+  }
+
+  closeModal(): void {
+    this.showModal = false;
+  }
 }

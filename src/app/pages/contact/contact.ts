@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import {HttpClient, HttpClientModule } from '@angular/common/http'
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, HttpClientModule],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss']
 })
@@ -15,18 +16,34 @@ export class Contact {
   email = '';
   message = '';
 
+  constructor(private http: HttpClient) {} // esto se usa para hacer peticiones
+
   onSubmit() {
     if (this.name && this.email && this.message) {
-      console.log('Formulario enviado:', {
+
+     const data = { 
         
         name: this.name,
         email: this.email,
         message: this.message
+        
+      };
+
+      this.http.post('http://localhost:8000/api/send-email', data).subscribe({
+        next: (res) => {
+          console.log('Respuesta de Laravel:', res);
+          alert('Mensaje enviado correctamente');
+          this.name = '';
+          this.email = '';
+          this.message = '';
+        },
+        error: (err) => {
+          console.error('Error al enviar:', err);
+          alert('Hubo un error al enviar el mensaje');
+        }
       });
-      alert('Mensaje enviado correctamente');
-      this.name = '';
-      this.email = '';
-      this.message = '';
+
+      
     }else {
       alert('Porfavor completa todos los campos');
     }

@@ -10,16 +10,16 @@
   text-align: center;
   overflow: hidden;
 
- #matrix-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0.3; 
-}
+  #matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.3;
+  }
 
   .home-content,
   .fixed-social-icons {
@@ -59,20 +59,38 @@
   .home-content {
     max-width: 700px;
 
+    /* Foto de perfil */
+    .foto-perfil img {
+      width: 300px; /* Aumenté el tamaño a 300px */
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff; /* Bordes más gruesos alrededor de la imagen */
+      margin-bottom: 2rem; /* Espacio entre la imagen y el texto */
+      box-shadow: 0 10px 25px rgba(51, 167, 202, 0.712); /* Sombra suave */
+      animation: float 5s ease-in-out infinite; /* Efecto de flotación */
+      transition: transform 0.3s ease;
+    }
+
+    /* Efecto hover para la imagen */
+    .foto-perfil img:hover {
+      transform: translateY(-4px); /* Mueve la imagen cuando el ratón pasa sobre ella */
+    }
+
     h1 {
-      font-size: 2.8rem;
+      font-size: 3.2rem; /* Ajuste del tamaño del encabezado */
       color: var(--accent-color);
       margin-bottom: 0.5rem;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       font-weight: 400;
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       line-height: 1.6;
       margin-bottom: 2rem;
     }
@@ -98,7 +116,8 @@
         }
 
         &.secondary {
-          background-color: transparent;
+          color: var(--text-color);
+          background-color: var(--accent-color);
           border: 2px solid var(--accent-color);
         }
       }
@@ -121,6 +140,16 @@
   @media (min-width: 769px) {
     .home-content .social-icons {
       display: none !important;
+    }
+  }
+
+  /* Animación de flotación (efecto hover) */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px); /* Movimiento más pronunciado para la imagen */
     }
   }
 }
