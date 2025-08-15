@@ -13,6 +13,39 @@ import { ProjectCard } from '../../components/project-card/project-card';
 export class Projects {
 
   projects = [
+
+    {
+    title: 'TIENDA DE JOYAS ENCANTO AMATISTA ',
+    description: 'Este proyecto consiste en el desarrollo de una página web para una tienda en línea de joyas y accesorios, diseñada con WordPress y optimizada para brindar una experiencia de compra sencilla, elegante y segura. Puedes visitar el sitio en https://encantoamatista.com',
+    technologies: ['WORDPRESS', 'DIVI', 'CSS'],
+    demoImages: [
+      'assets/img/amatista1.png',
+      'assets/img/amatista2.png',
+      'assets/img/amatista3.png'
+    ]
+  },
+  {
+    title: 'TIENDA DE ROPA ARTESANAL ONLINE-AYAHUASCA',
+    description: 'Este proyecto consiste en el desarrollo de una página web para una tienda en línea de ropa artesanal, diseñada con WordPress y optimizada para brindar una experiencia de compra sencilla, elegante y segura. Puedes visitar el sitio en https://ayahuascamodasostenible.com/',
+    technologies: ['WORDPRESS', 'DIVI', 'CSS'],
+    demoImages: [
+      'assets/img/ayahuasca1.png',
+      'assets/img/ayahuasca2.png',
+      'assets/img/ayahuasca3.png'
+    ]
+  },
+  
+  {
+    title: 'CLUB DE ENSEÑANZA DE BUCEO',
+    description: 'Este proyecto consiste en el desarrollo de una página web para un club de enseñanza de buceo, diseñada con WordPress y optimizada para brindar una experiencia de usuario sencilla y atractiva.',
+    technologies: ['WORDPRESS', 'DIVI', 'CSS'],
+    demoImages: [
+      'assets/img/buceo1.png',
+      'assets/img/buceo2.png',
+      'assets/img/buceo3.png'
+    ]
+  },
+
   {
     title: 'ADMINISTRADOR DE TURNOS CONSULTORIO MEDICO',
     description: 'Software para gestión de turnos de consultorio médico, con integración de API Zoho y Birdeye,para el registro y control de pacientes de la clinica.',
@@ -20,16 +53,6 @@ export class Projects {
     demoImages: [
       'assets/img/monitor.png',
       'assets/img/token.png'
-    ]
-  },
-  {
-    title: 'PAGINA DE COTIZACIONES DE TRABAJOS DE OBRA CIVIL',
-    description: 'pagina web en WordPress para la gestión de cotizaciones de trabajos de obra civil.',
-    technologies: ['WORDPRESS', 'ELEMENTOR', 'CSS'],
-    demoImages: [
-      'assets/img/pagina1.png',
-      'assets/img/pagina2.png',
-      'assets/img/pagina3.png'
     ]
   },
    {
@@ -52,6 +75,7 @@ export class Projects {
     technologies: ['LARAVEL', 'PHP', 'ANGULAR'],
 
   },
+  
   {
     title: 'PORTAFOLIO PERSONAL',
     description: 'portafolio personal.',

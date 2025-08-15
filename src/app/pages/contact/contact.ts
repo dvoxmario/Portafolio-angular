@@ -29,7 +29,7 @@ export class Contact {
         
       };
 
-      this.http.post('http://localhost:8000/api/send-email', data).subscribe({
+      this.http.post('https://api.maripchaverra.com/api/send-email', data).subscribe({
         next: (res) => {
           console.log('Respuesta de Laravel:', res);
           alert('Mensaje enviado correctamente');
