@@ -34,7 +34,7 @@ export class Projects {
     },
     {
       title: 'CLUB DE ENSEÑANZA DE BUCEO',
-      description: 'Este proyecto consiste en el desarrollo de una página web para un club de enseñanza de buceo, diseñada con WordPress y optimizada para brindar una experiencia de usuario sencilla y atractiva.',
+      description: 'Este proyecto consiste en el desarrollo de una página web para un club de enseñanza de buceo, diseñada con WordPress y optimizada para brindar una experiencia de usuario sencilla y atractiva. Puedes visitar el sitio en <a href="https://bluelifedive.com/" target="_blank">bluelifedive.com</a>',
       technologies: ['WORDPRESS', 'DIVI', 'CSS'],
       demoImages: [
         'assets/img/buceo1.png',
