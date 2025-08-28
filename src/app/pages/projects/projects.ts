@@ -14,12 +14,22 @@ export class Projects {
   projects = [
     {
       title: 'TIENDA DE JOYAS ENCANTO AMATISTA',
-      description: 'Este proyecto consiste en el desarrollo de una página web para una tienda en línea de joyas y accesorios, diseñada con WordPress y optimizada para brindar una experiencia de compra sencilla, elegante y segura. Puedes visitar el sitio en <a href="https://encantoamatista.com" target="_blank">encantoamatista.com</a>',
+      description: 'Este proyecto consiste en el desarrollo de una página web para una tienda en línea de joyas y accesorios, diseñada con WordPress y optimizada para brindar una experiencia de compra sencilla, elegante y segura. Puedes visitar el sitio en <a href="https://cpaintings.com/es/" target="_blank">encantoamatista.com</a>',
       technologies: ['WORDPRESS', 'DIVI', 'CSS'],
       demoImages: [
         'assets/img/amatista1.png',
         'assets/img/amatista2.png',
         'assets/img/amatista3.png'
+      ]
+    },
+    {
+      title: 'CONSULTORA DE TRABAJOS DE CARPINTERIA',
+      description: 'Este proyecto consiste en el desarrollo de una página web para una consultora de trabajos de carpintería, diseñada con WordPress y optimizada para brindar una experiencia de usuario sencilla y atractiva. Puedes visitar el sitio en <a href="https://cpaintings.com/es/" target="_blank">cpaintings.com</a>',
+      technologies: ['WORDPRESS', 'ELEMENTOR', 'CSS'],
+      demoImages: [
+        'assets/img/CPAINTING1.png',
+        'assets/img/CPAINTING2.png',
+        'assets/img/CPAINTING3.png'
       ]
     },
     {
