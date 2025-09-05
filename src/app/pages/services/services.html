@@ -7,8 +7,10 @@
         <div class="card-3d">
           <div class="card-front">
             <div class="service-card content">
-              <div class="icon-wrapper">
-                <i class="fas" [ngClass]="service.icon"></i>
+              <div class="pad">
+                <div class="icon-wrapper">
+                  <i class="fas" [ngClass]="service.icon"></i>
+                </div>
               </div>
               <h2>{{ service.title }}</h2>
               <ul>
@@ -20,7 +22,9 @@
             <div class="service-card content">
               <h2>{{ service.title }}</h2>
               <p>¿Quieres saber más?</p>
+              <div class="button-container"> <!--//contenedor que contrala la posicion del boton-->
               <button class="back-btn" [routerLink]="['/contact']">Contáctame</button>
+              </div>
             </div>
           </div>
         </div>
